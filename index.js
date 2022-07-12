@@ -46,9 +46,8 @@ function oddishOrEvenish(number) {
 }
 
 function at(arr, index) {
-  x = arr[index];
-  console.log("here is x", x);
-  return x;
+  //use for loop
+  for (let i = 0; i < arr.length; i++) {}
 }
 
 module.exports = { reverseWords, titleCaseWords, oddishOrEvenish, at };
