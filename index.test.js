@@ -1,4 +1,4 @@
-const { reverseWords, titleCaseWords, oddishOrEvenish } = require(".");
+const { reverseWords, titleCaseWords, oddishOrEvenish, at } = require(".");
 
 describe("reverseWords", () => {
   it("should reverse the words of a sentence", () => {
@@ -14,7 +14,14 @@ describe("title case words", () => {
 
 describe("oddishorEvenish", () => {
   it("should tell if the sum of the numbers are even or odd", () => {
-    expect(oddishOrEvenish('121')).toBe('Evenish');
-    expect(oddishOrEvenish('41')).toBe('Oddish');
-  })
-})
+    expect(oddishOrEvenish("121")).toBe("Evenish");
+    expect(oddishOrEvenish("41")).toBe("Oddish");
+  });
+});
+
+describe("at", () => {
+  it("takes array and index and returns item at corresponding value", () => {
+    expect(at[("a", "b", "c", "d", "e")]).toBe("b");
+    expect(at[("a", "b", "c", "d", "e")]).toBe("d");
+  });
+});
