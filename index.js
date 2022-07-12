@@ -10,18 +10,27 @@ function reverseWords(sentence) {
 }
 
 function titleCaseWords(sentence) {
+  //split sentece
+  //map through each word and uppercase each word at index 0
+  //join sentence back together
+
+  return sentence
+    .split(" ")
+    .map((word) => word[0].toUpperCase() + word.slice[1].toLowerCase())
+    .join(" ");
+
   //make sentence all lowercase
   //split sentence
   //map through each word
   //use charAt for first letter and make that uppercase
   //join sentence back together
-  sentence
-    .toLowerCase()
-    .split(" ")
-    .map((word) => {
-      word.charAt(0).toUpperCase() + word.slice(1);
-    })
-    .join(" ");
+  //   let caseWords = sentence
+  //     .toLowerCase()
+  //     .split(" ")
+  //     .map((word) => {
+  //       word.charAt(0).toUpperCase() + word.slice(1);
+  //     });
+  //   return caseWords.join(" ");
 }
 
 module.exports = { reverseWords, titleCaseWords };
