@@ -21,7 +21,7 @@ describe("oddishorEvenish", () => {
 
 describe("at", () => {
   it("takes array and index and returns item at corresponding value", () => {
-    expect(at[("a", "b", "c", "d", "e")]).toBe("b");
-    expect(at[("a", "b", "c", "d", "e")]).toBe("d");
+    expect(at[(("a", "b", "c", "d", "e"), 1)]).toBe("b");
+    expect(at[(("a", "b", "c", "d", "e"), -2)]).toBe("d");
   });
 });

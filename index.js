@@ -46,8 +46,12 @@ function oddishOrEvenish(number) {
 }
 
 function at(arr, index) {
-  //use for loop
-  for (let i = 0; i < arr.length; i++) {}
+  //2 if statements
+  //first if is for positive numbers and runs THROUGH arr from index 0 until index
+  //second if is for negative numbers and runs FROM arr.length until index
+  //return index
+
+  return index > -1 ? arr[index] : arr[arr.length + index];
 }
 
 module.exports = { reverseWords, titleCaseWords, oddishOrEvenish, at };
