@@ -32,5 +32,17 @@ function titleCaseWords(sentence) {
   //     });
   //   return caseWords.join(" ");
 }
+function oddishOrEvenish(number){
+   //split the number
+   //turn the strings into numbers
+   //then use .reduce add the numbers
+   // use the remainder in an if statement, if % = 1 return oddish else evenish
+    let x = number.toString(number).split("")
+    .map(Number)
+    .reduce((acc, sum) => acc + sum, 0); 
+    return x % 2 === 1 ? 'Oddish' : 'Evenish';
+    
+    
+}
 
-module.exports = { reverseWords, titleCaseWords };
+module.exports = { reverseWords, titleCaseWords, oddishOrEvenish };
